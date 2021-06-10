@@ -1,0 +1,1 @@
+export { MyBarsComponent } from './MyBarsComponent'

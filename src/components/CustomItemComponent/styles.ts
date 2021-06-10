@@ -6,5 +6,12 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
         margin: 10
     },
-
+    wrapperStyle: {
+        justifyContent: 'space-between',
+        width: '100%',
+    },
+    textContainer: {
+        marginRight: 5,
+        alignItems: 'center'
+    }
 })

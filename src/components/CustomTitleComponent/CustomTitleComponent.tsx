@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 import { View, Text } from "react-native";
 import { ListItemProps } from "react-native-elements";
-import { TItem } from "../../typings";
+import { TItem } from "../../Typings";
 import { styles } from "./styles";
 
 

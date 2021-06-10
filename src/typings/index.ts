@@ -1,3 +1,5 @@
+import React from "react"
+
 export type TItem = {
     subItems?: TItem[],
     title: string,
@@ -6,7 +8,16 @@ export type TItem = {
     subTitle?: string
 }
 
-export type TOptions = {
+export type TSectionListOptions = {
     title: string,
     data: Pick<TItem, 'title' | 'icon' | 'avatar' | 'subTitle'>[]
+}
+
+export type TSimpleListOptios = {
+    icon: any,
+    label: string,
+    isNavigatable: boolean,
+    childComponent?: React.ReactNode,
+    props?: any,
+    onPress?: () => void
 }
