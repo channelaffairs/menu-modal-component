@@ -3,7 +3,7 @@ export const menuItems = [
         title: "UserInfo",
         data: [{
             avatar: 'GS',
-            title: 'Gabriel Sanguigno',
+            title: 'Gabriel Sanguigno 1',
             subTitle: 'Manage your accounnt'
         },]
     },
@@ -25,7 +25,16 @@ export const menuItems = [
             {
                 icon: 'av-timer',
                 title: 'Switch account',
-                subItems: [{}]
+                subItems: [{
+                    avatar: 'GS',
+                    title: 'Gabriel Sanguigno 1',
+                    subTitle: 'No chanel'
+                },
+                {
+                    avatar: 'GS',
+                    title: 'Gabriel Sanguigno 2',
+                    subTitle: 'No chanel'
+                }]
             },
             {
                 icon: 'av-timer',
@@ -39,17 +48,30 @@ export const menuItems = [
             {
                 icon: 'av-timer',
                 title: 'Appearance: Device theme',
-                subItems: [{}]
+                subItems: [{
+                    title: 'Use device theme'
+                },
+                {
+                    title: 'Dark theme'
+                },
+                {
+                    title: 'Light theme'
+                }]
             },
             {
                 icon: 'av-timer',
                 title: 'Language: English',
-                subItems: [{}]
+                subItems: [{ title: 'Englich' },
+                { title: 'Russian' }]
             },
             {
                 icon: 'av-timer',
                 title: 'Location:Ukraine',
-                subItems: [{}]
+                subItems: [{
+                    title: 'Ukraine',
+                }, {
+                    title: 'USA'
+                }]
             },
             {
                 icon: 'av-timer',
@@ -79,7 +101,7 @@ export const menuItems = [
             {
                 icon: 'av-timer',
                 title: 'Restricted Mode:off',
-                subItems: [{}]
+                subItems: [{ text: 'This helps hide potentially mature videos. No filter is 100% accurate. This setting only applies to this browser.' }]
             }
         ]
     }

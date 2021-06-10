@@ -1,14 +1,11 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    modalContainer: {
-        flex: 1,
-        margin: 0,
-        padding: 0,
-    },
-    listContainer: {
-        flexGrow: 1,
+    itemContainer: {
         backgroundColor: '#202020'
+    },
+    itemTitle: {
+        color: '#f0f0f0'
     },
     lineSeparator: {
         backgroundColor: '#909090',

@@ -1,0 +1,1 @@
+export { CustomTitleComponent } from './CustomTitleComponent'
