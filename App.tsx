@@ -24,7 +24,7 @@ const App = () => {
   return (
     <SafeAreaProvider style={styles.container}>
       {/* ===U can use it like a separate component=== */}
-
+    // Why would I pass the options to the Modal component ? The Modal could display also just a picture or else
       <AppModal options={menuItems} onItemPress={doSomethingOnItemPress} isVisible={isModalVisible} />
 
 
