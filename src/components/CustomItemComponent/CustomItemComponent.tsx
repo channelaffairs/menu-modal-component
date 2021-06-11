@@ -6,6 +6,9 @@ import AppText from "../AppText";
 import { styles } from "./styles";
 
 
+
+
+
 export const CustomItemComponent = ({ item, ...props }: TProps) => {
 
     const onPress = useCallback(() => {
@@ -15,11 +18,14 @@ export const CustomItemComponent = ({ item, ...props }: TProps) => {
     }, [item])
 
     const renberChildComponent = useCallback(() => item?.childComponent && item?.childComponent(), [item])
-
+// Pressable is not needed with AppText - check component
     return <Pressable style={styles.container} onPress={onPress}>
         <AppText leftIcon={item.icon} color='black' rightIcon={item.childComponent ? faChevronRight : undefined} wrapperStyle={styles.wrapperStyle}>
+            // Why would a View be a child of AppText?
             <View style={styles.textContainer}>
+                // How is the user able to go back to the main menu?
                 <Text>{item.title}</Text>
+                // How would I pass props to the childComponent when rendered?
                 {renberChildComponent()}
             </View>
         </AppText>
