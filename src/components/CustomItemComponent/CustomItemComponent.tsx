@@ -7,7 +7,7 @@ import { styles } from "./styles";
 
 
 export const CustomItemComponent = ({ item, ...props }: TProps) => {
-
+// You are not passing down onPress to any children, why would you use useCallBack?
     const onPress = useCallback(() => {
         const data = item?.subItems ? { title: item?.title, data: item?.subItems } : null
         item.onPress && item.onPress()
